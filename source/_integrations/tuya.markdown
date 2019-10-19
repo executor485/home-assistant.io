@@ -34,6 +34,7 @@ tuya:
   username: YOUR_TUYA_USERNAME
   password: YOUR_TUYA_PASSWORD
   country_code: YOUR_ACCOUNT_COUNTRYCODE
+  platform: YOUR_PLATFORM_SEE_BELOW_FOR_OPTIONS
 ```
 
 {% configuration %}
@@ -51,7 +52,7 @@ country_code:
   type: string
 platform:
   description: "The app where your account register. `tuya` for Tuya Smart, `smart_life` for Smart Life, `jinvoo_smart` for Jinvoo Smart."
-  required: false
+  required: true
   type: string
   default: tuya
 {% endconfiguration %}
